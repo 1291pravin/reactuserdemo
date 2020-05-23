@@ -30,7 +30,7 @@ function Register() {
                 {errors && <Message type="danger" message={errors} />}
 
                 <Formik
-                    initialValues={{ name: 'Pravin', password: 'test@123', cnfpassword: 'test@123', email: 'test@test.com', contact: '1234567890' }}
+                    initialValues={{ name: '', password: '', cnfpassword: '', email: '', contact: '' }}
                     validationSchema={Yup.object({
                         name: Yup.string()
                             .required('Name must be present'),
